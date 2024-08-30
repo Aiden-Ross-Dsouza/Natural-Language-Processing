@@ -47,4 +47,4 @@ Below is a table, summarising the number of parameters and the BLEU scores achie
 
 ### Reference(s):
 * [PyTorch Seq2Seq by Aladdin Persson](https://github.com/aladdinpersson/Machine-Learning-Collection/blob/558557c7989f0b10fee6e8d8f953d7269ae43d4f/ML/Pytorch/more_advanced/Seq2Seq_attention/seq2seq_attention.py)
-* [PyTorch Pytorch Transformer by Umar Jamil](https://github.com/aladdinpersson/Machine-Learning-Collection/blob/558557c7989f0b10fee6e8d8f953d7269ae43d4f/ML/Pytorch/more_advanced/Seq2Seq_attention/seq2seq_attention.py)
+* [PyTorch Pytorch Transformer by Umar Jamil](https://github.com/hkproj/pytorch-transformer)
