@@ -4,17 +4,17 @@ The machine translation task was traditionally performed using statistical metho
 
 With the popularization of neural networks and deep learning, heavy research into Neural Machine Translation (NMT) and its successful employment has largely replaced SMT. This section contains implementations of papers that introduced some of those ground-breaking architectures in NMT.
 
-All the models were trained on the [Multi30k](https://arxiv.org/abs/1605.00459) dataset which contains roughly 30 thousand English, German and French sentences, each sentence being 10-20 words long. We have trained and evaluated our models for translation from German to English.
+All the models were trained on the [Multi30k](https://arxiv.org/abs/1605.00459) dataset and the [English to Hindi Machine Translation (EHMT)](https://www.kaggle.com/datasets/parvmodi/english-to-hindi-machine-translation-dataset?select=train.hi) dataset. We have trained and evaluated our models for translation from German to English & Hindi to English.
 
 Below is a table addressing some common data and optimization related parameters.
 
-| Parameter      |       Value        |
-| -------------- |:------------------:|
-| Training Set   |    29000/31014     |
-| Testing Set    |     1000/31014     |
-| Validation Set |     1014/31014     |
-| Loss Function  | Cross Entropy Loss |
-| Optimizer      |       AdamW        |
+| Parameter      |       Multi30k        |          EHMT         |
+| -------------- |:---------------------:|:---------------------:|
+| Training Set   |      29000/31014      |       10000/18000     |
+| Testing Set    |      1000/31014       |        3000/18000     |
+| Validation Set |      1014/31014       |        5000/18000     |
+| Loss Function  |   Cross Entropy Loss  |   Cross Entropy Loss  |
+| Optimizer      |         Adam          |         Adam          |
 
 ## Architectures
 
