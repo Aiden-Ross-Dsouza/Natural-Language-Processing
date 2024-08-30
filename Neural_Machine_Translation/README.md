@@ -18,7 +18,7 @@ Below is a table addressing some common data and optimization related parameters
 
 ## Architectures
 
-### 1. [Neural Machine Translation by Jointly Learning to Align and Translate](https://github.com/IvLabs/Natural-Language-Processing/blob/master/neural_machine_translation/notebooks/Seq2Seq_with_Attention.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hOd2JFafWgOvdbeXWoSm1gIiMEQ64KbM?usp=sharing)
+### 1. [Neural Machine Translation by Jointly Learning to Align and Translate](https://github.com/Aiden-Ross-Dsouza/Natural-Language-Processing/blob/db8ea74b06acd73fc8235afff4d86d03b0869cee/Neural_Machine_Translation/notebooks/Attention_is_all_you_Need.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hOd2JFafWgOvdbeXWoSm1gIiMEQ64KbM?usp=sharing)
 This paper presents a remarkable improvement in the Sequence to Sequence architecture by introducing a (soft)alignment metric called "attention". This metric induces a sense of similarity between tokens of the source and decoded sentences, which increases the BLEU score by almost 1.5 times and is much more robust with regards to the length of source and target sentences.\
 **<ins>Note:</ins>** 
 In this implementation, initializing the ```teacher_forcing_ratio``` at 0.6 and gradually decreasing it over iterations led to an improved BLEU score.
