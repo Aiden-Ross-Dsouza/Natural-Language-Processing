@@ -16,10 +16,17 @@ The quality of the embeddings depends on the size and quality of the training da
 ## Results
 
 - Training Loss
+  
+![Screenshot 2024-09-11 123919](https://github.com/user-attachments/assets/30feb953-39db-4a94-b28d-6c0dfe45fd4d)
 
 - PCA plot of entire corpus
+  
+![Screenshot 2024-09-11 124015](https://github.com/user-attachments/assets/cb96c369-5c72-4ce0-b7ba-daee8848c15f)
 
-- Analogical Reasoning
+- Analogical Reasoning: men - women ≈ phone - cell
+  
+![Screenshot 2024-09-11 124054](https://github.com/user-attachments/assets/d012985b-801b-491d-867e-03dd5515c580)
+
 ## Acknowledgements
 
  - [Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient Estimation of Word Representations in Vector Space.](https://arxiv.org/abs/1301.3781)
