@@ -9,7 +9,7 @@ The model is built using PyTorch with custom multi-head self-attention and feedf
 
 # Summary
 
-Below is a table, summarising the number of parameters and the BLEU scores achieved by each architecture.
+Below is a table, summarising the number of parameters.
 
 | Parameter | Value     |
 | :-------- | :------- |
