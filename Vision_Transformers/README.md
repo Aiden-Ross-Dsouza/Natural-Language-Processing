@@ -1,0 +1,67 @@
+# Vision Transformer (ViT)
+
+## Overview
+
+Vision Transformers (ViT) are deep learning models that leverage self-attention mechanisms, originally designed for NLP, to process image data. Unlike traditional Convolutional Neural Networks (CNNs), which rely on spatial hierarchies through convolutional layers, ViTs divide images into fixed-size patches and process them similarly to tokenized text in NLP.
+
+ViTs have demonstrated competitive performance compared to CNNs, especially when trained on large-scale datasets. However, they require substantial data and computational resources to generalize effectively.
+
+## Comparison: ViT vs. CNN
+
+| Feature                       | Vision Transformer (ViT)                           | Convolutional Neural Network (CNN)                  |
+| ----------------------------- | -------------------------------------------------- | --------------------------------------------------- |
+| Feature Extraction            | Uses self-attention to capture global dependencies | Uses convolutional layers to extract local features |
+| Inductive Bias                | Minimal; relies on large-scale training data       | Stronger due to hierarchical feature extraction     |
+| Computational Cost            | Higher due to attention mechanisms                 | Lower; optimized with convolutions                  |
+| Performance on Small Datasets | Requires large-scale pretraining                   | Performs well even on small datasets                |
+| Interpretability              | Less intuitive due to attention mechanisms         | More interpretable with feature maps                |
+
+## Implementation Overview
+
+The provided notebook implements a Vision Transformer for image classification. It includes:
+
+- **Dataset Handling:** Image loading, transformation, and augmentation.
+- **Model Architecture:** Defining the ViT model using pre-trained weights or training from scratch.
+- **Training Pipeline:** Configuring hyperparameters, loss functions, and optimizers.
+- **Evaluation:** Computing accuracy and visualization of predictions.
+
+## Hyperparameters
+
+The model was trained with the following hyperparameters:
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Learning Rate | 1e-4          |
+| Batch Size    | 512           |
+| Epochs        | 40            |
+| Optimizer     | Adam          |
+| Loss Function | Cross-Entropy |
+
+## Results
+
+After training, the model achieved the following results:
+
+| Metric              | Value  |
+| ------------------- | ------ |
+| Training Accuracy   | 84.85% |
+| Validation Accuracy | 88.31% |
+| Training Loss       | 54.7%  |
+| Validation Loss     | 46.1%  |
+
+The model demonstrates strong performance, with minimal overfitting, and competitive accuracy on the validation set.
+
+---
+
+This repository serves as an implementation of Vision Transformers for image classification tasks, providing insights into their advantages over traditional CNNs.
+
+
+## Acknowledgements
+
+ - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
+ - [Vision Transformer: What It Is & How It Works - 2024 Guide](https://www.v7labs.com/blog/vision-transformer-guide)
+ - [Transformers for Vision D2L](https://d2l.ai/chapter_attention-mechanisms-and-transformers/vision-transformer.html)
+ - [ViT: Vision Transformer Medium Blog by Shivani Junawane](https://medium.com/machine-intelligence-and-deep-learning-lab/vit-vision-transformer-cc56c8071a20)
+ - [vit-pytorch by lucidrains](https://github.com/lucidrains/vit-pytorch)
+ - [pytorch-image-models by huggingface](https://github.com/huggingface/pytorch-image-models)
+ - [Vision Transformer in PyTorch](https://www.youtube.com/watch?v=ovB0ddFtzzA&t=5s)'
+ - [Implement and Train ViT From Scratch for Image Recognition - PyTorch](https://www.youtube.com/watch?v=Vonyoz6Yt9c)
