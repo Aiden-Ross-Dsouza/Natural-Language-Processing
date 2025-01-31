@@ -36,6 +36,22 @@ The dataset used for training is the [Digit Recognizer Dataset](https://www.kagg
 | Patch Processing              | Linearly embedded patches + CLS token              | Token embeddings + CLS token                    |
 | Computational Complexity      | Scales quadratically with image resolution         | Scales quadratically with sequence length       |
 
+## Pretrained Vision Transformer (ViT) Models
+
+The following is a list of the various ViT models available on Hugging Face. In this repository, we have utilized the ViT-B/16 model for pretrained model-based inference.
+
+| **Model Name**       | **Input Size** | **Patch Size** | **Num of Layers** | **Num of Heads** | **Embed Dim** | **MLP Dim** | **Parameters** | **Pretrained on** | **Link**                                               |
+|----------------------|----------------|----------------|-------------------|------------------|---------------|-------------|----------------|-------------------|-------------------------------------------------------|
+| **ViT-B/16**          | 224x224        | 16x16          | 12                | 12               | 768           | 3072        | 86M            | ImageNet          | [ViT-B/16](https://huggingface.co/google/vit-base-patch16-224-in21k)  |
+| **ViT-B/32**          | 224x224        | 32x32          | 12                | 12               | 768           | 3072        | 86M            | ImageNet          | [ViT-B/32](https://huggingface.co/google/vit-base-patch32-224-in21k)  |
+| **ViT-L/16**          | 224x224        | 16x16          | 24                | 16               | 1024          | 4096        | 304M           | ImageNet          | [ViT-L/16](https://huggingface.co/google/vit-large-patch16-224-in21k)  |
+| **ViT-L/32**          | 224x224        | 32x32          | 24                | 16               | 1024          | 4096        | 304M           | ImageNet          | [ViT-L/32](https://huggingface.co/google/vit-large-patch32-224-in21k)  |
+| **ViT-H/14**          | 224x224        | 14x14          | 32                | 16               | 1280          | 5120        | 632M           | ImageNet-21K      | [ViT-H/14](https://huggingface.co/google/vit-huge-patch14-224-in21k)  |
+| **ViT-B/16 (Finetuned)** | 224x224    | 16x16          | 12                | 12               | 768           | 3072        | 86M            | Fine-tuned on COCO| [Finetuned ViT](https://huggingface.co/google/vit-base-patch16-224-coco) |
+| **ViT-M/16**          | 224x224        | 16x16          | 12                | 12               | 512           | 2048        | 40M            | ImageNet          | [ViT-M/16](https://huggingface.co/google/vit-medium-patch16-224-in21k) |
+
+These models can be easily integrated with your project and are available on Hugging Face for quick access.
+
 ## Hyperparameters
 
 The model was trained with the following hyperparameters:
