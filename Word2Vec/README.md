@@ -30,6 +30,7 @@ The quality of the embeddings depends on the size and quality of the training da
 ## Acknowledgements
 
  - [Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient Estimation of Word Representations in Vector Space.](https://arxiv.org/abs/1301.3781)
+ - [Distributed Representations of Words and Phrases and their Compositionality](https://arxiv.org/pdf/1310.4546)
  - [Implementing word2vec in PyTorch (skip-gram model)](https://towardsdatascience.com/implementing-word2vec-in-pytorch-skip-gram-model-e6bae040d2fb)
  - [Word2Vec and Visualization with PCA](https://www.kaggle.com/code/chmasgun/word2vec-and-visualization-with-pca)
 
