@@ -50,8 +50,6 @@ LLaMA 3 employs **Rotary Positional Embeddings (RoPE)** instead of traditional a
    - **Weight Tying:** Shares embedding weights between the input and output layers to reduce the number of parameters.
    
 ### 6. Memory Management & Efficient Computation
-   - Moves tensors to `CUDA` for GPU acceleration (if available).
-   - Utilizes `torch.compile()` (if implemented) for better performance optimization.
    - **Activation Checkpointing:** Reduces memory consumption during training by recomputing activations on-the-fly.
    - **Flash Attention:** Implements an optimized attention computation technique that reduces memory overhead.
 
