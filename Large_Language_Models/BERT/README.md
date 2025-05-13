@@ -1,4 +1,4 @@
-# BERT 110M — Implementation from Scratch
+# BERT 110M
 
 This repository provides a **from-scratch implementation of the BERT (Bidirectional Encoder Representations from Transformers) 110M** parameter model using PyTorch. The goal is to replicate and understand the internal workings of the original BERT-base model, released by Google in 2018, which has since become foundational in modern NLP.
 
@@ -12,7 +12,7 @@ The BERT-110M model specifically refers to the **BERT-Base** architecture, which
 
 | Model        | Hidden Size | Layers | Attention Heads | Parameters |
 |--------------|-------------|--------|------------------|------------|
-| **BERT-Base** (this repo) | 768         | 12     | 12               | 110M       |
+| **BERT-Base** | 768         | 12     | 12               | 110M       |
 
 ---
 
@@ -85,64 +85,9 @@ Final embedding = sum of all three
 
 ---
 
-## 🚀 Quickstart
-
-```bash
-# Clone the repo
-git clone https://github.com/your-username/bert-110m-from-scratch.git
-cd bert-110m-from-scratch
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run pretraining (example)
-python train.py --config configs/bert_base.json
-```
-
----
-
-## 📁 Repository Structure
-
-```
-bert-110m/
-├── model/                  # BERT model implementation
-│   ├── embedding.py
-│   ├── transformer.py
-│   └── bert.py
-├── tokenizer/              # WordPiece tokenizer
-├── data/                   # Dataset preprocessing
-├── train.py                # Pretraining pipeline
-├── utils.py
-└── configs/
-    └── bert_base.json
-```
-
----
-
 ## 📖 References
 
 - [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
 - [HuggingFace Transformers](https://github.com/huggingface/transformers)
 - [The Illustrated BERT](https://jalammar.github.io/illustrated-bert/)
 - [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692)
-
----
-
-## 🛠️ TODO
-
-- [ ] Add finetuning scripts (QA, classification)
-- [ ] Add support for mixed-precision training
-- [ ] Implement BERT-Large variant
-- [ ] Integrate with HuggingFace Model Hub
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
----
-
-## 🧑‍💻 License
-
-This project is licensed under the MIT License.
