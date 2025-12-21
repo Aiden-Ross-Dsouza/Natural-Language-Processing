@@ -1,5 +1,5 @@
 
-# Chat GPT
+# GPT 2
 
 GPT-2 is a large transformer⁠-based unsupervised language model, with 1.5 billion parameters, which generates coherent paragraphs of text. It performs rudimentary reading comprehension, machine translation, question answering, and summarization without task-specific training.
 
